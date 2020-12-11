@@ -34,19 +34,164 @@ nav{
 }
 .enqueryForm{
   position: fixed;
-  bottom: 40px;
-  right: 100px;
+  right: 0px;
   top:80px;
-  width: 380px;
-  border: 3px solid #73AD21; 
-    background-color: #f2f2f2;
+  width: 460px;
+  border: 1px solid #4dff4d; 
+  background-color: #f2f2f2;
+  z-index: 99999;
+}
+.enqueryCnt{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    padding: 20px 0px 0px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .banner{
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/b1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 660px;
+    height: 570px;
 }
+.rowMargin{
+    padding-top: 110px;
+}
+.logo{
+     font-family: 'Montserrat', sans-serif;
+     padding-bottom: 200px;
+    color:  #4dff4d;
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 180px;
+   }
+.descSection{
+  background-color: rgba(0,0,0,.8);
+    padding: 14px 0px;
+    text-align: center;
+}
+.descNumber{
+    width: 24px;
+    height: 24px;
+    display: block;
+    line-height: 16px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color:  #4dff4d;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 4px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-left: 85px;
+}
+.descText{
+   font-family: 'Montserrat', sans-serif; 
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+}
+.bigHead{
+   font-family: 'Montserrat', sans-serif; 
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px; 
+    letter-spacing: 1px;
+}
+.subHead{
+    font-family: 'Montserrat', sans-serif; 
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.heading{
+    font-family: 'Montserrat', sans-serif; 
+    color: #333;
+    font-weight: 700;
+    font-size: 30px; 
+    letter-spacing: 1px;
+}
+.heading1{
+    font-family: 'Montserrat', sans-serif; 
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;   
+}
+.subHead1{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin-top: 8px;
+}
+.icon{
+    color: #4dff4d;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.iconText{
+     font-family: 'Montserrat', sans-serif; 
+     margin-bottom: 10px;
+     font-size: 20px;
+     line-height: 28px;
+     color: #000;
+     margin-left: 10px;
+}
+.rating{
+   color: #4dff4d; 
+    font-size: 14px;
+}
+.lawyerImg{
+   width: 145px;
+   height: 145px;   
+}
+.lawyerName{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+.degree{
+   font-family: 'Montserrat', sans-serif;
+    line-height: 16px;
+    font-size: 14px;
+    color: #333; 
+}
+.chatButton{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: 2px solid #4dff4d;
+    border-radius: 4px;
+    padding: 12px 24px;
+    color: #000000; 
+   font-weight: bold;
+}
+.chatButton:hover{
+     text-decoration: none;
+     background-color: #4dff4d;
+     color: #000000; 
+}
+.nav-link{
+    padding: 0px 5px;
+}
+.submitButton{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color:  #4dff4d;
+    border-radius: 4px;
+    padding: 8px 24px;
+    color: #000000; 
+   font-weight: bold; 
+    float: right;
+}
+
+
+
 
 
 /* Extra small devices (phones, 300px and down)  start*/
@@ -65,6 +210,13 @@ nav{
 
 /* Medium devices ( 767px and down) start */
 @media only screen and (max-width: 767px){ 
+    .enqueryForm{
+    position: absolute;
+    right: 17px;
+    top: 23px;
+    width: auto;
+    height: 516px;
+    }
 
 }
 
@@ -72,7 +224,9 @@ nav{
 
 /* Medium devices (landscape tablets, 768px and up)  start*/
 @media only screen and (min-width: 768px) {
-
+ .enqueryForm{
+        bottom: auto;
+    }
     
 }
     
@@ -88,7 +242,10 @@ nav{
 
 /* Large devices (laptops/desktops, 992px and up)  start*/
 @media only screen and (min-width: 992px) {
- 
+    .enqueryForm{
+        right: 02px;
+        bottom: auto;
+    }
 
 }
 
@@ -96,7 +253,9 @@ nav{
 
 /* Extra large devices (large laptops and desktops, 1200px and up)  start*/
 @media only screen and (min-width: 1200px) {
-     .banner{
-   
+      .enqueryForm{
+        right: 100px;
+          bottom: 40px;
+    }
    
 }
